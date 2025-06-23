@@ -5,6 +5,7 @@
 namespace WWParser.Defs
 {
 
+using global::System;
 using global::System.Collections.Generic;
 using global::Google.FlatBuffers;
 
