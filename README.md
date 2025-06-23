@@ -1,6 +1,6 @@
 # WuwaTools
-A bunch of useful WuWa tools
-Releasing this as Im no longer interested in WuWa RE'ing
+A bunch of useful WuWa tools\
+Releasing this as Im no longer interested in WuWa RE'ing\
 Some of the code is 1.5+ years old, so don't expect it to be well-written
 
 # protodumperv2.ts
