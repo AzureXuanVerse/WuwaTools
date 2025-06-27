@@ -11,6 +11,7 @@ Some of the code is 1.5+ years old, so don't expect it to be well-written
 - Parses BinData and TextMaps from game's ConfigDB's
 
 ## For protodumperv2 and fbsdumper you need to place decompiled `JavaScript` folder next to the scripts and run them using ts-node
+## To compiled FBS defs, you need to use `flatc.exe` with arguments `flatc.exe --csharp {your .fbs file} --gen-object-api --cs-gen-json-serializer`
 
 # I DO NOT CLAIM ANY RESPONSIBILITY FOR ANY USAGE OF THIS SOFTWARE, THE SOFTWARE IS MADE 100% FOR EDUCATIONAL PURPOSES ONLY
 
