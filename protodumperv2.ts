@@ -1,5 +1,5 @@
 // Import the protobuf library and the root object from the Protocol.js file
-const $protobuf = require("./Define/Net/protobuf");
+const $protobuf = require("./JavaScript/Core/Define/Net/protobuf");
 
 import Module from "module";
 import path from "path";
@@ -15,12 +15,12 @@ const originalRequire = Module.prototype.require;
     return originalRequire.call(this, request);
 };
 
-const $root = require("./Define/Net/Protocol.js");
-const $util = require("./Define/Net/protobuf");
-const $netdefine = require("./Define/Net/NetDefine.js");
+const $root = require("./JavaScript/Core/Define/Net/Protocol.js");
+const $util = require("./JavaScript/Core/Define/Net/protobuf");
+const $netdefine = require("./JavaScript/Core/Define/Net/NetDefine.js");
 import { writeFileSync } from "fs";
 type Long = any;
-const Long = require("./Define/Net/long.js");
+const Long = require("./JavaScript/Core/Define/Net/long.js");
 
 
 // PushMessageIds
@@ -198,7 +198,7 @@ function getFieldTypeFromConstructorName(fieldvalue: object): string {
     
     console.log(`// Could not find type for ${fieldvalue.constructor.name}`);
     const fs = require('fs');
-    const filedata = fs.readFileSync(`./Define/Net/Protocol.js`, 'utf8');
+    const filedata = fs.readFileSync(`./JavaScript/Core/Define/Net/Protocol.js`, 'utf8');
     const regex = /.(\w+) = \(Yf\.create/gm;
     // find all the class names
     let match = regex.exec(filedata);
